@@ -1,0 +1,15 @@
+.blocks-content {
+    display: flex;
+
+    .blocks {
+        padding: 15px;
+        width: 10vw;
+        cursor: pointer;
+        border: 1px 1px 2px 0px rgba(0, 0, 0, 0);
+        text-align: center;
+
+        &:hover {
+            border: 1px solid rgba(0, 0, 0, 0.157);
+        }
+    }
+}

@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: roboto, sans-serif;
+}
+
+.blocks-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blocks-content .blocks {
+  padding: 15px;
+  width: 10vw;
+  cursor: pointer;
+  border: 1px 1px 2px 0px rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.blocks-content .blocks:hover {
+  border: 1px solid rgba(0, 0, 0, 0.157);
+}
+
+.center {
+  height: 80vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center .search {
+  height: 5vh;
+  width: 40vw;
+  border: 1px solid rgba(0, 0, 0, 0.157);
+  outline: 0;
+  border-radius: 32px;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center .search:hover {
+  -webkit-box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.144);
+          box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.144);
+}
+
+.center .search input {
+  height: 100%;
+  width: 80%;
+  border: none;
+  outline: 0;
+}
+/*# sourceMappingURL=main.css.map */
