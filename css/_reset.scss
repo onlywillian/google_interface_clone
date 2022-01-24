@@ -5,4 +5,8 @@
 body {
     height: 100vh;
     font-family: roboto, sans-serif;
+    font-size: clamp(.8rem, .8rem, .5rem);
+}
+.material-icons {
+    color: gray;
 }

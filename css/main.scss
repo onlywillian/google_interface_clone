@@ -1,3 +1,12 @@
 @import 'reset';
 @import 'blocks';
 @import 'center';
+@import 'header';
+@import 'footer';
+@import 'variables';
+
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

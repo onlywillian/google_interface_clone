@@ -1,0 +1,42 @@
+@import "variables";
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    align-items: center;
+
+    .links {
+        margin-right: 15px;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .apps-icon {
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+
+        &:hover {
+            background: $gray;
+        }
+    }
+
+    .login {
+        background: #1a73e8;
+        color: white;
+        width: 105px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: .8rem;
+        margin: 0px 10px;
+    }
+}

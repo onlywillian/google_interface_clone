@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Google Interface Clone</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <p class="links">Gmail</p>
+        <p class="links">Imagens</p>
+        <div class="apps">
+            <i class="material-icons apps-icon">apps</i>
+        </div>
+        <div class="login">Fazer Login</div>
+    </header>
 
     <div class="center">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
 
         <div class="search">
-            <i>icon</i>
-            <input type="text">
-            <i>icon</i>
+            <label for="input" class="material-icons">search</label>
+            <input id="input" type="text">
+            <i class="material-icons">keyboard</i>
         </div>
     
         <div class="blocks-content">
@@ -24,16 +33,23 @@
     </div>
 
     <footer>
-        <ul>
-            <li>Sobre</li>
-            <li>Publicedade</li>
-            <li>Negócios/li>
-            <li>Como funciona a pesquisa</li>
-
-            <li>Privacidade</li>
-            <li>Termos</li>
-            <li>Configurações</li>
-        </ul>
+        <div class="country">
+            <p>Brasil</p>
+        </div>
+        <div class="info">
+            <ul>
+                <li>Sobre</li>
+                <li>Publicidade</li>
+                <li>Negócios</li>
+                <li>Como funciona a pesquisa</li>
+            </ul>
+    
+            <ul>
+                <li>Privacidade</li>
+                <li>Termos</li>
+                <li>Configurações</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
