@@ -11,6 +11,7 @@ body {
   display: grid;
   -ms-grid-rows: 60px 1fr 94px;
       grid-template-rows: 60px 1fr 94px;
+  min-height: 400px;
 }
 
 .material-icons {
@@ -24,6 +25,7 @@ body {
 }
 
 .blocks-content .blocks {
+  background: #f2f2f2;
   height: 36px;
   margin: 11px 4px;
   cursor: pointer;
@@ -38,7 +40,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0px 16px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .blocks-content .blocks:hover {
@@ -63,11 +65,15 @@ body {
   color: #3c4043;
 }
 
-.center a {
+.center .language {
+  height: 116px;
+}
+
+.center .language a {
   text-decoration: none;
 }
 
-.center a:hover {
+.center .language a:hover {
   text-decoration: underline;
 }
 
@@ -77,7 +83,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.157);
   outline: 0;
   border-radius: 32px;
-  margin: 30px 0;
+  margin: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +105,12 @@ body {
   width: 80%;
   border: none;
   outline: 0;
+}
+
+@media (max-width: 1024px) {
+  .language {
+    min-height: 216px;
+  }
 }
 
 header {
