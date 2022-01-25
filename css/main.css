@@ -7,6 +7,10 @@ body {
   height: 100vh;
   font-family: roboto, sans-serif;
   font-size: clamp(0.8rem, 0.8rem, 0.5rem);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 60px 1fr 94px;
+      grid-template-rows: 60px 1fr 94px;
 }
 
 .material-icons {
@@ -20,13 +24,21 @@ body {
 }
 
 .blocks-content .blocks {
-  padding: 0 16px;
   height: 36px;
-  width: 140px;
   margin: 11px 4px;
   cursor: pointer;
-  border: 1px 1px 2px 0px rgba(0, 0, 0, 0);
-  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 16px;
+  margin-bottom: 50px;
 }
 
 .blocks-content .blocks:hover {
@@ -34,7 +46,6 @@ body {
 }
 
 .center {
-  height: 84%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +60,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #3c4043;
+}
+
+.center a {
+  text-decoration: none;
+}
+
+.center a:hover {
+  text-decoration: underline;
 }
 
 .center .search {
@@ -93,6 +113,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #3c4043;
 }
 
 header .links {
@@ -135,6 +156,7 @@ header .login {
 }
 
 footer {
+  height: 94px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,19 +164,38 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: .9rem;
   color: #70757a;
   background: #f2f2f2;
-  height: 46px;
 }
 
-footer .info {
-  padding: 0 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.157);
+footer .country {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 46px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .country p {
+  margin-left: 30px;
+}
+
+footer .info {
+  height: 100%;
+  padding: 0 20px;
+  border-top: 1px solid #dadce0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
